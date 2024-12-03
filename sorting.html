@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Dropdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sorting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Faculty+Glyphic&family=IM+Fell+Great+Primer+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dropdown-container">
+        <img src="images/harrywand.png" alt="Dropdown Icon" class="dropdown-icon">
+        <div class="dropdown-menu">
+            <ul>
+                <li><a href="aboutharry.html">Harry Potter</a></li>
+                <li><a href="ronandhermione.html">Ron and Hermione</a></li>
+                <li><a href="hogwarts.html">Hogwarts: School and Staff</a></li>
+                <li><a href="sorting.html">Get Sorted</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-text-2">
+        <img src="images/sortingron.png" alt="Image 1">
+
+    </div>
+    <div class="quiz-container">
+        <h1>Get Sorted</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. When faced with a challenge, you:</p>
+                <label>
+                    <input type="radio" name="q1" value="gryffindor"> A. Rush in to face it head-on!
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="hufflepuff"> B. Remain calm and think it through.
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="ravenclaw"> C. Try to solve it logically and creatively.
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="slytherin"> D. Look for ways to gain an advantage.
+                </label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. How do you spend your free time?</p>
+                <label>
+                    <input type="radio" name="q2" value="gryffindor"> A. Engaging in adventurous activities.
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="hufflepuff"> B. Helping others or relaxing with friends.
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="ravenclaw"> C. Reading, studying, or learning something new.
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="slytherin"> D. Plotting my next big move.
+                </label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. What quality do you value the most?</p>
+                <label>
+                    <input type="radio" name="q3" value="gryffindor"> A. Bravery and courage.
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="hufflepuff"> B. Loyalty and fairness.
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="ravenclaw"> C. Intelligence and wisdom.
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="slytherin"> D. Ambition and resourcefulness.
+                </label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. If you were to receive a gift, what would it be?</p>
+                <label>
+                    <input type="radio" name="q4" value="gryffindor"> A. A magical sword or broomstick.
+                </label><br>
+                    <label>
+                    <input type="radio" name="q4" value="hufflepuff"> B. A comforting sweater or a basket of treats.
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="ravenclaw"> C. A book of spells or an enchanted notebook.
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="slytherin"> D. A potion-making kit or a rare artifact.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-btn">
+                <button type="button" onclick="determineHouse()">Submit</button>
+            </div>
+
+            <!-- Result Display -->
+            <div id="result"></div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+

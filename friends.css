@@ -1,0 +1,9 @@
+
+body {
+    background-image: url('images/tree\ wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(10, 0, 60);
+}

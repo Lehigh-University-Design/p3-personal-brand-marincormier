@@ -1,0 +1,6 @@
+body{
+    background-image: url('images/stripebackground.png');
+    background-size: cover;
+    height: 100vh;
+    gap: 20px;
+}
