@@ -1,5 +1,13 @@
 body{
     background-image: url('images/map.png');
     background-size: cover;
-    background-position: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+h5{
+    color: rgb(90, 0, 0);
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }

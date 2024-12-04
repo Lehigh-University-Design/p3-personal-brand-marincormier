@@ -1,6 +1,75 @@
 body{
-    background-image: url('images/stripebackground.png');
+    background-image: url('images/redgoldstripe.png');
     background-size: cover;
     height: 100vh;
     gap: 20px;
+}
+
+.one{
+    
+}
+.two{
+    
+}
+
+.one,.two{
+    a,.image-text{
+        display: flex;
+        margin-bottom: 20px;
+        /* align-items: left; */
+        /* width: 800px; */
+        width: 100%;
+        max-height: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+   
+
+}
+
+.flying-image {
+    position: absolute;
+    width: 100px; /* Adjust the size of the image */
+    animation: flyAcross 5s linear infinite;
+}
+
+/* Define the flying animation */
+@keyframes flyAcross {
+    0% {
+        left: -100px; /* Start off-screen on the left */
+    }
+    50% {
+        left: 50%; /* Move to the center of the screen */
+        transform: translateX(-50%); /* Center the image horizontally */
+    }
+    100% {
+        left: 100%; /* Move off-screen on the right */
+    }
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px; /* Add some padding for smaller screens */
+    }
+
+    .one, .two {
+        /* Make sure there's some margin for these sections */
+        margin-bottom: 10px;
+    }
+
+    .one a, .two a, .one .image-text, .two .image-text {
+        flex-direction: column; /* Stack content vertically on small screens */
+        align-items: center; /* Center the content */
+        width: 100%; /* Full width for mobile */
+    }
+
+    /* Adjust flying-image for smaller screens */
+    .flying-image {
+        width: 80px; /* Smaller flying image for mobile */
+        animation: flyAcross 4s linear infinite; /* Speed up the flying animation */
+    }
+
+    /* You can adjust specific elements here if necessary */
 }

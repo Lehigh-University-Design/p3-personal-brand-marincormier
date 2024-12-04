@@ -1,9 +1,14 @@
 
 body {
-    background-image: url('images/tree\ wallpaper.png');
+    background-image: url('images/wallpaper-easy-living-10jan14_pr_b.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
     margin: 0;
     color: rgb(10, 0, 60);
+}
+
+h4{
+    color: rgb(139, 0, 0);
+    font-size: 45px;
 }
