@@ -1,6 +1,5 @@
 body {
     background-image:linear-gradient(to bottom, #f0f0 0% 50%, #000 100%), url('images/greenstar.webp');  /* Set background image for about page */
-    
     background-size: cover;
     background-position: center;
     /* height: 100vh; */
